@@ -17,15 +17,7 @@ class ViewController: UIViewController {
     fileprivate var webView: FullScreenWKWebView = FullScreenWKWebView()
     fileprivate lazy var refreshButton: UIImageView = createRefreshButton()
     fileprivate lazy var homeButton: UIImageView = createHomeButton()
-    
-    private var safeAreaMargin: UIEdgeInsets {
-        if #available(iOS 11.0, *) {
-            if let window: UIWindow = UIApplication.shared.keyWindow {
-                return window.safeAreaInsets
-            }
-        }
-        return .zero
-    }
+    fileprivate lazy var contactMeLabel: UILabel = UILabel()
     
     private func createRefreshButton() -> UIImageView {
         let imageView = UIImageView()
@@ -39,6 +31,22 @@ class ViewController: UIViewController {
         imageView.setW(48, andH: 48)
         imageView.image = UIImage(named: "home_icon")
         return imageView
+    }
+    
+    private func setupContactMeLabel() {
+        view.addSubview(contactMeLabel)
+        contactMeLabel.text = "Suggestion? Text Me 0811343434"
+        contactMeLabel.textColor = .black
+        contactMeLabel.font = UIFont(name: "HelveticaNeue", size: 12)!
+        contactMeLabel.backgroundColor = UIColor(
+            red: 255, green: 255, blue: 255, alpha: 0.5
+        )
+        contactMeLabel.textAlignment = .center
+        contactMeLabel.layer.cornerRadius = 8
+        contactMeLabel.clipsToBounds = true
+        contactMeLabel.setW(200, andH: 24)
+        contactMeLabel.insideTopEdge(by: 24)
+        contactMeLabel.insideLeftEdge(by: 24)
     }
     
     private func setupRefreshButton() {
@@ -82,7 +90,7 @@ class ViewController: UIViewController {
     
     private func setRefreshButtonPosition() {
         refreshButton.insideRightEdge(by: 36)
-        refreshButton.outsideTopEdge(of: homeButton, by: 16)
+        refreshButton.outsideTopEdge(of: homeButton, by: 8)
     }
     
     override func viewDidLoad() {
@@ -90,6 +98,7 @@ class ViewController: UIViewController {
         setupWebView()
         setupHomeButton()
         setupRefreshButton()
+        setupContactMeLabel()
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
