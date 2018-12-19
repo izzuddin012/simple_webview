@@ -1,0 +1,16 @@
+PODS:
+  - uiview-frame-helpers (0.1.1)
+
+DEPENDENCIES:
+  - uiview-frame-helpers (= 0.1.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - uiview-frame-helpers
+
+SPEC CHECKSUMS:
+  uiview-frame-helpers: c3feade603cca5c805dd857e64692c7e7e01d5ec
+
+PODFILE CHECKSUM: 965e00ff56c727dea7dffe4624d9e370a43121a6
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,6 @@
+framework module uiview_frame_helpers {
+  umbrella header "uiview-frame-helpers-umbrella.h"
+
+  export *
+  module * { export * }
+}
