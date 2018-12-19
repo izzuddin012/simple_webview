@@ -12,6 +12,7 @@
 		1BA3E61021C9CE4600025212 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA3E60E21C9CE4600025212 /* Main.storyboard */; };
 		1BA3E61221C9CE4700025212 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA3E61121C9CE4700025212 /* Assets.xcassets */; };
 		1BA3E61521C9CE4700025212 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA3E61321C9CE4700025212 /* LaunchScreen.storyboard */; };
+		1BA3E61D21C9DEAA00025212 /* FullScreenWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA3E61C21C9DEAA00025212 /* FullScreenWebView.swift */; };
 		C53CE60C60B176165F7453AD /* Pods_WebView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1A760B35579E4315E6B31F /* Pods_WebView.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		1BA3E61121C9CE4700025212 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BA3E61421C9CE4700025212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BA3E61621C9CE4700025212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BA3E61C21C9DEAA00025212 /* FullScreenWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenWebView.swift; sourceTree = "<group>"; };
 		7E1A760B35579E4315E6B31F /* Pods_WebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		977CA9F2A2F73B32B31446F4 /* Pods-WebView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebView/Pods-WebView.debug.xcconfig"; sourceTree = "<group>"; };
 		D1B01B841584369DF80827D3 /* Pods-WebView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebView.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebView/Pods-WebView.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			children = (
 				1BA3E60A21C9CE4600025212 /* AppDelegate.swift */,
 				1BA3E60C21C9CE4600025212 /* ViewController.swift */,
+				1BA3E61C21C9DEAA00025212 /* FullScreenWebView.swift */,
 				1BA3E60E21C9CE4600025212 /* Main.storyboard */,
 				1BA3E61121C9CE4700025212 /* Assets.xcassets */,
 				1BA3E61321C9CE4700025212 /* LaunchScreen.storyboard */,
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BA3E60D21C9CE4600025212 /* ViewController.swift in Sources */,
+				1BA3E61D21C9DEAA00025212 /* FullScreenWebView.swift in Sources */,
 				1BA3E60B21C9CE4600025212 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
