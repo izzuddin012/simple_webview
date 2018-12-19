@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_SimpleWebViewVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_SimpleWebViewVersionString[];
+FOUNDATION_EXPORT double Pods_WebViewVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_WebViewVersionString[];
 

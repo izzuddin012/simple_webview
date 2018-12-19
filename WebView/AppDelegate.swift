@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SimpleWebView
+//  WebView
 //
 //  Created by Muhammad Izzuddin on 19/12/18.
 //  Copyright © 2018 Muhammad Izzuddin. All rights reserved.
