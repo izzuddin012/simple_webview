@@ -43,8 +43,11 @@ class ViewController: UIViewController {
             target: self,
             action: #selector(didTapBack)
         )
-        navigationController?.navigationBar.tintColor = .black
         navigationItem.leftBarButtonItem = barButton
+        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.barTintColor = UIColor(red: 221.0 / 255.0, green: 22 / 255.0, blue: 59 / 255.0, alpha: 1)
+        //navigationController?.navigationBar.barTintColor = UIColor(red: 19.0 / 255.0, green: 24 / 255.0, blue: 27 / 255.0, alpha: 1)
     }
     
     override func viewDidLoad() {
